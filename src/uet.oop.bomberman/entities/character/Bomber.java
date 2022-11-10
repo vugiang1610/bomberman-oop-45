@@ -16,7 +16,7 @@ import uet.oop.bomberman.entities.bomb.FlameSegment;
 import uet.oop.bomberman.entities.character.enemy.Enemy;
 import uet.oop.bomberman.entities.tile.item.Item;
 import uet.oop.bomberman.level.Coordinates;
-import uet.oop.bomberman.level.FileLevelLoader;
+
 
 
 public class Bomber extends Character {
@@ -42,7 +42,6 @@ public class Bomber extends Character {
 
     public Bomber(int x, int y, Board board) {
         super(x, y, board);
-      //  super(0, 0, board);
       // tọa độ của boomber
         _bombs = _board.getBombs();
         _input = _board.getInput();
@@ -224,7 +223,7 @@ public class Bomber extends Character {
               3 sang phải
               2 lên trên
               0 xuống dưới
-              thông số để choosepire chọn
+              thông số để chooseSprite chọn
         */
 
 

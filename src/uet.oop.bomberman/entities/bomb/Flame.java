@@ -110,12 +110,12 @@ public class Flame extends Entity {
 	@Override
 	public boolean collide(Entity e) {
 
-		if(e instanceof Enemy) { //  xử lý va chạm với Enemy,
+		if(e instanceof Enemy) { //  xử lý va chạm với Enemy
 			((Enemy) e).kill();
 			return false;
 		}
                 
-		if(e instanceof Bomber) {//  xử lý va chạm với Bomber,
+		if(e instanceof Bomber) {//  xử lý va chạm với Bomber
 			((Bomber)e).kill();
 			return false;
 		}

@@ -1,6 +1,5 @@
 package uet.oop.bomberman.level;
 
-import java.util.ArrayList;
 import uet.oop.bomberman.Board;
 import uet.oop.bomberman.exceptions.LoadLevelException;
 

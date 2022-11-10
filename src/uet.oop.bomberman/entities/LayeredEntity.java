@@ -2,7 +2,6 @@ package uet.oop.bomberman.entities;
 
 import uet.oop.bomberman.entities.tile.destroyable.DestroyableTile;
 import uet.oop.bomberman.graphics.Screen;
-
 import java.util.LinkedList;
 
 /**
@@ -50,11 +49,7 @@ public class LayeredEntity extends Entity {
 			_entities.removeLast();
 		}
 	}
-	
-	public void addBeforeTop(Entity e) {
-		_entities.add(_entities.size() - 1, e);
-	}
-	
+
 	@Override
 	public boolean collide(Entity e) {
 		//  lấy entity trên cùng ra để xử lý va chạm

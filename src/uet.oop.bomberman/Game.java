@@ -139,7 +139,7 @@ public class Game extends Canvas {
 	public void start() {
 		_running = true;
 		
-		long  lastTime = System.nanoTime(); // thời gian thực trong quá khư , vòng loob cũ
+		long  lastTime = System.nanoTime(); // thời gian thực trong quá khứ , vòng loob cũ
 		long timer = System.currentTimeMillis();
 		final double ns = 1000000000.0 / 60.0; //nanosecond, 60 frames per second ( tần số f) vậy 1/ns là thời gian load 1 frame
 		double delta = 0;

@@ -1,13 +1,9 @@
 package uet.oop.bomberman.level;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.StringTokenizer;
 import uet.oop.bomberman.Board;
 import uet.oop.bomberman.Game;
 import uet.oop.bomberman.entities.LayeredEntity;
@@ -43,7 +39,7 @@ public class FileLevelLoader extends LevelLoader {
 	public void loadLevel(int level) throws LoadLevelException {
             try {   
                 
-                 // chuyển đổi từ  level từ int sang sat sang string 
+                 // chuyển đổi từ  level từ int sang string
 		URL absPath = FileLevelLoader.class.getResource("/levels/Level" + Integer.toString(level) + ".txt");                     
 		BufferedReader in = new BufferedReader( new InputStreamReader(absPath.openStream() ) );
 		String data = in.readLine(); // đọc  hàng đầu tiền
@@ -131,7 +127,7 @@ public class FileLevelLoader extends LevelLoader {
                                              , new LayeredEntity(x, y, new Grass(x, y, Sprite.grass)
                                                      , new Portal(x, y,_board ,Sprite.portal), new Brick(x, y, Sprite.brick)));
                                   break;
-                                    // Balloon
+                                    // Balloom
 				case '1':
                                     _board.addEntity(pos, new Grass(x, y, Sprite.grass));
                                     _board.addCharacter(new Balloom(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, _board));
