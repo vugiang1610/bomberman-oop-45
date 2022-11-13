@@ -74,7 +74,18 @@ public class Sprite {
 	public static Sprite balloom_right3 = new Sprite(16, 10, 2, SpriteSheet.tiles, 16, 16);
 	
 	public static Sprite balloom_dead = new Sprite(16, 9, 3, SpriteSheet.tiles, 16, 16);
-	
+	//kondoria
+	public static Sprite kondoria_left1 = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+	public static Sprite kondoria_left2 = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+	public static Sprite kondoria_left3 = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+
+	public static Sprite kondoria_right1 = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+	public static Sprite kondoria_right2 = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+	public static Sprite kondoria_right3 = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+
+	public static Sprite kondoria_dead = new Sprite(16, 12, 5, SpriteSheet.tiles, 16, 16);
+
+
 	//ONEAL
 	public static Sprite oneal_left1 = new Sprite(16, 11, 0, SpriteSheet.tiles, 16, 16);
 	public static Sprite oneal_left2 = new Sprite(16, 11, 1, SpriteSheet.tiles, 16, 16);

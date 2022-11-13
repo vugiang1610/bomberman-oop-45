@@ -89,7 +89,6 @@ public class Board implements IRender {
 	}
 	// chuyển sang level tiếp
 	public void nextLevel() {
-
 		loadLevel(_levelLoader.getLevel() + 1);
 	}
 	// ván mới
@@ -135,8 +134,8 @@ public class Board implements IRender {
 	
 	public void endGame() {
 		if (_live == 0) {
-			_game.resetScreenDelay();
 			_screenToShow = 3;
+			_game.resetScreenDelay();
 		}
 		_screenToShow = 1;
 		_game.resetScreenDelay();

@@ -151,7 +151,7 @@ public class Game extends Canvas {
 		while(_running) {
 			long now = System.nanoTime(); // thời gian bây h
 			delta += (now - lastTime) / ns;   // denta t tức là thời gian  vòng loob cũ .  đơn vị  s^2 
-                        // denta =1 ; now -lastTime = ns  => thời gian của của 1 vòng loob = T chu kì chuẩn
+                        // denta = 1 ; now -lastTime = ns  => thời gian của của 1 vòng loob = T chu kì chuẩn
                         
                         
 			lastTime = now; // để last time  cho vòng loob while sau tính
@@ -185,7 +185,7 @@ public class Game extends Canvas {
 			if(System.currentTimeMillis() - timer > 1000) {
 				_frame.setTime(_board.subtractTime());
 				_frame.setLives(_board.getLives());
-                               // quy trình : info goi Pannel goi frame goi trong day 
+                               // quy trình : info gọi Panel gọi frame gọi trong day
                                 
 				timer += 1000;
                                 // in thông số 

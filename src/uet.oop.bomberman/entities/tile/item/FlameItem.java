@@ -29,6 +29,6 @@ public class FlameItem extends Item {
     public void setValues() {
 		this.setActive(true);
 		// tăng bán kính bom
-		Game.addBombRadius(1);
+		Game.addBombRadius(2);
     }
 }
